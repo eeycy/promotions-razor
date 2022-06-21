@@ -1,13 +1,62 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Αρχική Σελίδα Αίτησης για Προαγωγή";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <p>Hello, world! The time on the server is @DateTime.Now</p>
-    <p>Testing commit and Push</p></>
-    <p>i luv git</p>
-</div>
+    <!--Main-->
+    <main class="govcy-container govcy-my-2" id="mainContainer">
+      <div class="row">
+        <div class="govcy-col-9 govcy-order-last">
+
+          <h1>Αρχική Σελίδα</h1>             
+
+          <p>Κάποιες Δοκιμαστικές λειτουργίες...</p>
+
+          <a class="govcy-btn-primary" type="button" href="~/NewApplication">Νέα Αίτηση</a>
+
+          <div class="govcy-table-responsive">
+            <table class="govcy-table">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Προκήρυξη</th>
+                    <th scope="col">Ημερομηνία</th>
+                    <th scope="col">Θέση</th>
+                    <th scope="col">Κατάσταση</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>1</td>
+                    <td>10/05/2022</td>
+                    <td>Βοηθός Διευθυντής ΜΕ Α' Αγγλικών</td>
+                    <td>Κλειστή</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>2</td>
+                    <td>10/06/2022</td>
+                    <td>Διευθυντής Μέσης Εκπαίδευσης</td>
+                    <td>Ανοικτή</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>3</td>
+                    <td>01/06/2022</td>
+                    <td>Βοηθός Διευθυντής ΜΕ Πληροφορικής</td>
+                    <td>Κλειστή</td>
+                </tr>
+                </tbody>
+            </table>
+          </div>
+        </div>
+
+        <aside class="govcy-col-3 govcy-order-first">
+          <ul class="nav-side govcy-flex-column">
+            <li><a href="http://www.eey.gov.cy/" class="nav-link">Ιστοσελίδα ΕΕΥ</a></li>
+          </ul>
+        </aside>
+      </div>
+    </main>

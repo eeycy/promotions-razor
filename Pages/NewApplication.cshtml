@@ -1,0 +1,39 @@
+﻿@page
+@model promotions_razor.Pages.NewApplicationModel
+@{
+    ViewData["Title"] = "Νέα αίτηση για Προαγωγή";
+}
+
+    <!--Main-->
+    <main class="govcy-container govcy-my-2" id="mainContainer">
+      <div class="row">
+        <div class="govcy-col-9 govcy-order-last">
+          <h1>Νέα Αίτηση</h1>             
+          <form action="https://www.w3schools.com/action_page.php" class="govcy-form" novalidate>
+              <div class="govcy-form-control">
+                  <label class="govcy-label" for="input">Email address</label>
+                  <span class="govcy-hint" id="email-hint">Καταχωρήστε το e-mail σας!</span>
+                  <input class="govcy-text-input" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+                  <br><br>
+                  <label class="govcy-label" for="input">Όνομα</label>
+                  <span class="govcy-hint" id="name-hint">Καταχωρήστε το όνομα σας!</span>
+                  <input class="govcy-text-input" id="name" name="name" type="text" spellcheck="false" aria-describedby="name-hint" autocomplete="name">
+                  <br><br>
+                  <input type="submit" class="govcy-btn-primary" value="Καταχώρηση">
+              </div>
+          </form>
+
+          <div class="govcy-float-start">
+              <span class="bi bi-chevron-left"></span>
+	          <a class="govcy-back-link" href="/">Back</a>
+          </div> 
+
+        </div>    
+        <aside class="govcy-col-3 govcy-order-first">
+          <ul class="nav-side govcy-flex-column">
+            <li><a href="http://www.eey.gov.cy/" class="nav-link">Ιστοσελίδα ΕΕΥ</a></li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+
